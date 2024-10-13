@@ -1,31 +1,25 @@
 // imports
 import React, { useState } from "react";
-import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils";
 
 // this component renders the navbar with a menu toggle button, linking the different sections on the page 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
+    <nav>
+      <a href="/">
         AC
       </a>
-      <div className={styles.menu}>
+      <div >
         <img
-          className={styles.menuBtn}
           src={
             menuOpen
-              ? getImageUrl("nav/close-icon.png")
-              : getImageUrl("nav/menu-icon.png")
           }
           alt="menu-icon and close-icon by Icons8"
           onClick={() => setMenuOpen(!menuOpen)}
         />
         {/* menu button that toggles state */}
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         >
           {/* menu items list (conditionally rendered) */}

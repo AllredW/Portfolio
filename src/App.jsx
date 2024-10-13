@@ -1,10 +1,10 @@
 //imports
-import styles from "App.css";
-import { Navbar } from "./components/Navbar";
-import { About } from "./components/About";
-import { Resume } from "./components/Resume/Resume";
-import { Projects } from "./components/Projects";
-import { Contact } from "./components/Contact";
+// import styles from "App.css";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,7 +12,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <div className={styles.App}>
+      <div>
         <Navbar />
         <About />
         <Resume />
